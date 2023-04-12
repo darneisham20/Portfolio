@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==== FAVICON ==== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- ==== UNICORNS ==== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ==== SWIPER CSS ==== -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- ==== HEADER ==== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Darneisha
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="uil uil-estate"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-image-v"></i> Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <i class="uil uil-comment-dots"></i> Testimonials
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="uil uil-multiply"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Theme change button -->
+                <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
+
+                <!-- Toggle Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==== MAIN ==== -->
+    <main>
+        <!-- ==== HOME ==== -->
+        <section class="home section" id="home">
+            <div class="home__container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">
+                        Hi, I'm Darneisha <br>
+                        Frontend Developer <br>
+                        Based in Indianapolis, IN <br>
+                    </h1>
+
+                    <div class="home__blob grid">
+                        <div class="home__perfil">
+                            <img src="assets/img/profile_picture.jpg" alt="home perfil">
+                        </div>
+
+                        <img src="" alt="" class="home__shape-wawes">
+                    </div>
+
+                    <ul class="home__social">
+                        <a href="https://www.linkedin.com/in/darneishamiller/" target="_blank" class="home__social-link">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/darneisham20" target="_blank" class="home__social-link">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+
+                        <!-- <a href="#" target="_blank" class="home__social-link">
+                            
+                        </a> -->
+                    </ul>
+                </div>
+
+                <!-- ==== HOME INFO 1 ==== -->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            ABOUT ME
+                        </h3>
+
+                        <p class="home__info-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, hic ad harum necessitatibus eum molestias dignissimos corrupti, magni repellat illo explicabo eius veritatis quisquam maiores omnis magnam aspernatur quasi labore.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            CONTACT ME
+                        </h3>
+
+                        <p class="home__info-description">
+                            Indianapolis, Indiana <br>
+                            darneisham20@gmail.com <br>
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="home__info-title">
+                            SERVICES
+                        </h3>
+
+                        <p class="home__info-description">
+                            Website Design <br>
+                            UI / UX Design <br>
+                            Front-end Development <br>
+                            Back-end Development <br>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- ==== HOME INFO 2 ==== -->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            YEARS OF EXPERIENCE
+                        </h3>
+
+                        <p class="home__info-number">
+                            01+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPLETED PROJECTS
+                        </h3>
+
+                        <p class="home__info-number">
+                            5+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPANIES WORKED FOR
+                        </h3>
+
+                        <p class="home__info-number">
+                            1+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==== SKILLS ==== -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My Favorite Skills?</span>
+
+            <div class="skills__container container grid section__border">
+                <!-- ==== SKILLS 1: Frontend Development ==== -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="uil uil-brackets-curly"></i> Frontend Development
+                    </h3>
+
+                    <!-- HTML -->
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/html5.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">HTML</h3>
+                        </div>
+
+                        <!-- CSS3 -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="/assets/img/css3.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">CSS</h3>
+                        </div>
+
+                        <!-- Javascript -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="/assets/img/javascript.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">Javascript</h3>
+                        </div>
+
+                        <!-- React -->
+                        <!-- <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">React</h3>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- ==== SKILLS 2: Backend Development ==== -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="uil uil-server-connection"></i> Backend Development
+                    </h3>
+
+                    <div class="skills__info">
+                        <!-- C# -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="/assets/img/csharp.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">C#</h3>
+                        </div>
+
+                        <!-- .NET -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="/assets/img/dotnet.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">.NET</h3>
+                        </div>
+
+                        <!-- Node.js -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="/assets/img/nodedotjs.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">
+                                <span class="skills__subtitle">Node.js</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==== SKILLS 3: Tools ==== -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="uil uil-paint-tool"></i> Development Tools
+                    </h3>
+
+                    <div class="skills__info">
+                        <!-- VS Code -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="./assets/img/visualstudiocode.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills__name">VS Code</h3>
+                        </div>
+
+                        <!-- Visual Studio -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="/assets/img/visualstudio.svg" alt="skills image">
+                            </div>
+                            
+                            <h3 class="skills__name">Visual Studio</h3>
+                        </div>
+                        
+                        <!-- Github -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="/assets/img/github.svg" alt="skills image">
+                            </div>
+                            
+                            <h3 class="skills__name">Github</h3>
+                        </div>
+                        
+                        <!-- Git -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="/assets/img/git.svg" alt="skills image">
+                            </div>
+                            
+                            <h3 class="skills__name">Git</h3>
+                        </div>
+                        
+                        <!-- Figma -->
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="/assets/img/Figma-Icon-Black.svg" alt="skills image">
+                            </div>
+                            
+                            <h3 class="skills__name">Figma</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==== Portfolio ==== -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">My most recent work</span>
+
+            <div class="container section__border">
+                <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
+                        <!-- ==== Project 1 ==== -->
+                        <div class="projects__content swiper-slide">
+                            <img src="/assets/img/portfolio_project_backup.jpg" alt="projects image" class="projects__img">
+
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h1 class="projects__title">Project 1</h1>
+
+                                <a href="#" class="projects__button">
+                                    View Demo <i class="uil uil-arrow-right"></i>
+                                </a>
+
+                                <a href="https://github.com/darneisham20" class="projects__button">
+                                    View GitHub <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ==== Project 2 ==== -->
+                        <div class="projects__content swiper-slide">
+                            <img src="/assets/img/portfolio_project_backup.jpg" alt="projects image" class="projects__img">
+
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h1 class="projects__title">Project 2</h1>
+
+                                <a href="#" class="projects__button">
+                                    View Demo <i class="uil uil-arrow-right"></i>
+                                </a>
+
+                                <a href="https://github.com/darneisham20" class="projects__button">
+                                    View GitHub <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ==== Project 3 ==== -->
+                        <div class="projects__content swiper-slide">
+                            <img src="/assets/img/portfolio_project_backup.jpg" alt="projects image" class="projects__img">
+
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h1 class="projects__title">Project 3</h1>
+
+                                <a href="#" class="projects__button">
+                                    View Demo <i class="uil uil-arrow-right"></i>
+                                </a>
+
+                                <a href="https://github.com/darneisham20" class="projects__button">
+                                    View GitHub <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ==== Project 4 ==== -->
+                        <div class="projects__content swiper-slide">
+                            <img src="/assets/img/portfolio_project_backup.jpg" alt="projects image" class="projects__img">
+
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h1 class="projects__title">Project 4</h1>
+
+                                <a href="#" class="projects__button">
+                                    View Demo <i class="uil uil-arrow-right"></i>
+                                </a>
+
+                                <a href="https://github.com/darneisham20" class="projects__button">
+                                    View GitHub <i class="uil uil-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Swiper Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b"></i>
+                    </div>
+
+                    <!-- Swiper Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ==== TESTIMONIAL ==== -->
+        <section class="testimonial section">
+            <h2 class="section__title">Testimonials</h2>
+            <span class="section__subtitle">Nice things people have said about me</span>
+
+            <div class="container section__border">
+                <div class="testimonial__container swiper">
+                    <div class="swiper-wrapper">
+                        <!-- ==== TESTIMONIAL 1 ==== -->
+                        <div class="testimonial__content swiper-slide">
+                            <img src="/assets/img/tumblr_p4gn99r6131wteddwo4_1280.jpg" alt="testimonial image" class="testimonial__img">
+                            
+                            <div>
+                                <h3 class="testimonial__name">Name 1</h3>
+                                <a href="#" class="testimonial__subtitle">Company / Job Title</a>
+                            </div>
+
+                            <p class="testimonial__description">
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi exercitationem, accusamus ullam veritatis aliquam deleniti rem? Fugiat dolore ipsam similique delectus sunt adipisci modi aspernatur. Quo officiis aliquam nihil ab?"
+                            </p>
+                        </div>
+                        
+                        <!-- ==== TESTIMONIAL 2 ==== -->
+                        <div class="testimonial__content swiper-slide">
+                            <img src="/assets/img/tumblr_p4gn99r6131wteddwo4_1280.jpg" alt="testimonial image" class="testimonial__img">
+                            
+                            <div>
+                                <h3 class="testimonial__name">Name 2</h3>
+                                <a href="#" class="testimonial__subtitle">Company / Job Title</a>
+                            </div>
+
+                            <p class="testimonial__description">
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi exercitationem, accusamus ullam veritatis aliquam deleniti rem? Fugiat dolore ipsam similique delectus sunt adipisci modi aspernatur. Quo officiis aliquam nihil ab?"
+                            </p>
+                        </div>
+
+                        <!-- ==== TESTIMONIAL 3 ==== -->
+                        <div class="testimonial__content swiper-slide">
+                            <img src="/assets/img/tumblr_p4gn99r6131wteddwo4_1280.jpg" alt="testimonial image" class="testimonial__img">
+                            
+                            <div>
+                                <h3 class="testimonial__name">Name 3</h3>
+                                <a href="#" class="testimonial__subtitle">Company / Job Title</a>
+                            </div>
+
+                            <p class="testimonial__description">
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi exercitationem, accusamus ullam veritatis aliquam deleniti rem? Fugiat dolore ipsam similique delectus sunt adipisci modi aspernatur. Quo officiis aliquam nihil ab?"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Swiper Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ==== CONTACT ME ==== -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==== FOOTER ==== -->
+    <footer class="footer">
+
+    </footer>
+
+
+    <!-- ==== SWIPER JS ==== -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- ==== MAIN JS ==== -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
