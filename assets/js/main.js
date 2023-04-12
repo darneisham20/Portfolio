@@ -60,3 +60,5 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+/* ==== TESTIMONIAL SWIPER ==== */
