@@ -226,6 +226,11 @@ img {
     bottom: 2rem;
 }
 
+/* Active Link */
+.active-link {
+    color: var(--title-color);
+}
+
 /*==== HOME ====*/
 .home__container {
     row-gap: 4;
@@ -245,31 +250,28 @@ img {
 
 /* FIX IMAGE SPACING...WHAT DO I WANT TO DO?*/
 
-/* .home__blob {
+.home__blob {
     position: relative;
-    width: 200px;
-    height: 290px;
+    width: 250px;
     background-color: var(--body-color);
     border: 2px solid var(--text-color-light);
     justify-self: center;
-    border-radius: 6.25rem;
+    border-radius: 3.5rem;
     place-items: center;
 }
 
 .home__perfil {
-    width: 170px;
-    height: 260px;
-    background: var(--gradient-color);
-    border-radius: 5.5rem;
+    width: 220px;
+    border-radius: 3rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
 }
 
 .home__perfil img {
-    width: 150px;
-} */
+    width: 220px;
+    border-radius: 3.5rem;
+}
 
 .home__social {
     justify-content: center;
@@ -706,6 +708,31 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: hsl(207, 4%, 55%);
+}
+
+/*==== SCROLL UP ====*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 12px hsl(207, 24%, 35%, .15);
+    display: inline-flex;
+    padding: .35rem;
+    border-radius: .25rem;
+    font-size: 1.1rem;
+    color: var(--title-color);
+    z-index: var(--z-tooltip);
+    transition: bottom .3s, transform .3s;
+}
+
+.scrollup:hover {
+    transform: translateY(-.25rem)
+}
+
+/* Show Scroll Up! */
+.show-scroll {
+    bottom: 7.5rem;
 }
 
 /*==== MEDIA QUERIES ====*/
