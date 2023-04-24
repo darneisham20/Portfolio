@@ -627,19 +627,29 @@ img {
     margin-top: .75rem;
 }
 
-.contact__button i {
+/* .contact__button i {
     font-size: 1.5rem;
     font-weight: initial;
     transition: transform .3s
-}
+} */
 
-/* .contact__button::after {
+.contact__button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.150rem;
+    left: 0;
+    bottom: 0;
+    background: var(--title-color);
 
+    transform: scale(0, 1);
+    transform-origin: 0% 100;
+    transition: transform 0.3s ease;
 }
 
 .contact__button:hover::after {
-
-} */
+    transform: scale(1, 1);
+}
 
 
 /*==== FOOTER ====*/
@@ -736,9 +746,89 @@ img {
 }
 
 /*==== MEDIA QUERIES ====*/
-
 /* Small Devices */
+@media screen and (max-width: 340px){
+    .container {
+        margin-inline: 1rem;
+    }
 
+    .nav__menu {
+        padding-bottom: 4rem;
+    }
+
+    .nav__list {
+        gap: 1rem 1.25rem;
+    }
+
+    .skills__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects__img {
+        width: 200px;
+        justify-self: center;
+    }
+}
 /* Medium Devices */
+@media screen and (min-width: 576px) {
+    .nav,
+    .nav__menu {
+        width: 380px;
+    }
+
+    .nav {
+        margin: 0 auto
+    }
+
+    .skills__container {
+        justify-content: center;
+    }
+
+    .projects__container,
+    .testimonial__container {
+        width: 400px;
+    }
+
+    .projects__container {
+        overflow: hidden;
+    }
+
+    .projects__container .swiper-button-prev {
+        left: 1rem;
+    }
+    
+    .projects__container .swiper-button-next {
+        right: 1rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    /* .home__container {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .home__data {
+        order: 2;
+    }
+
+    .home__info:nth-child(3) {
+        order: 3;
+        text-align: right;
+    }
+
+    .home__info {
+        margin-top: 10rem;
+    }
+
+    .home__info-description {
+        padding-right: 0;
+    } */
+
+    .skills__container {
+        grid-template-columns: repeat(1);
+    }
+
+}
+
 
 /* Large Devices */
