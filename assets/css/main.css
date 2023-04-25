@@ -635,6 +635,22 @@ img {
     transform: scale(1, 1);
 }
 
+.contact__message {
+    font-size: var(--small-font-size);
+    position: absolute;
+    bottom: 2.8rem;
+    left: 1.5rem;
+}
+
+/* Status Color */
+
+.color-red {
+    color: hsl(4, 71%, 50%);
+}
+
+.color-success {
+    color: hsl(207, 56%, 45%);
+}
 
 /*==== FOOTER ====*/
 .footer__container {

@@ -457,7 +457,7 @@
         <!-- ==== CONTACT ME ==== -->
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Fill in your info in the form below and I look forward to hearing from you!</span>
+            <span class="section__subtitle">Fill in your info in the form below and I'll get back to you as soon as possible!</span>
 
             <div class="contact__container container grid section__border">
                 <div class="contact__content">
@@ -470,13 +470,15 @@
 
                         <div class="contact__form-div">
                             <label class="contact__form-tag">Email</label>
-                            <input type="text" name="user_email" required placeholder="" class="contact__form-input" id="contact-name">
+                            <input type="text" name="user_email" required placeholder="" class="contact__form-input" id="contact-email">
                         </div>
 
                         <div class="contact__form-div contact__form-area">
                             <label class="contact__form-tag">Message</label>
-                            <textarea name="user_message" placeholder="" id="contact-project" class="contact__form-input"></textarea>
+                            <textarea name="user_project" placeholder="" id="contact-project" class="contact__form-input"></textarea>
                         </div>
+
+                        <p class="contact__message" id="contact-message"></p>
 
                         <button type="submit" class="contact__button">
                             Submit <i class="uil uil-envelope-open"></i>
@@ -530,6 +532,10 @@
 
     <!-- ==== SWIPER JS ==== -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- ==== EMAIL JS ==== -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 
     <!-- ==== MAIN JS ==== -->
     <script src="./assets/js/main.js"></script>
