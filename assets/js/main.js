@@ -97,12 +97,3 @@ const scrollUp = () => {
         : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
-
-/* ==== CHANGE BACKGROUND HEADER ==== */
-// const scrollHeader = () => {
-//     const header = document.getElementById('header')
-//     // When scroll is greater than 50 VP height, add scroll-header class to the header tag
-//     this.scrollY >= 50 ? header.classList.add('bg-header')
-//         : header.classList.remove('bg-header')
-// }
-// window.addEventListener('scroll', scrollHeader)
