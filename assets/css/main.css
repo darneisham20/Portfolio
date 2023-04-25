@@ -12,6 +12,7 @@
     --text-color-light: hsl(207, 4%, 56%);
     --body-color: hsl(207, 4%, 99%);
     --container-color: hsl(207, 4%, 95%);
+    --text-dynamic: hsl(209, 72%, 67%);
 
     /* Change the first number */
     /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
@@ -239,6 +240,7 @@ img {
 
 .home__data {
     row-gap: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .home__title {
@@ -248,7 +250,44 @@ img {
     margin-bottom: .5rem;
 }
 
-/* FIX IMAGE SPACING...WHAT DO I WANT TO DO?*/
+/* Dynamic Text */
+
+.dynamic__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.dynamic__title .text {
+    position: relative;
+    font-size: var(--h1-font-size);
+}
+
+.container .text.sec-text {
+    color: var(--text-dynamic)
+}
+
+.container .text.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--body-color);
+    border-left: 2px solid var(--text-dynamic);
+    animation: animate 4s steps(18) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100% {
+        left: 0%;
+    }
+}
 
 .home__blob {
     position: relative;
@@ -273,7 +312,7 @@ img {
     border-radius: 3.5rem;
 }
 
-.home__social {
+/* .home__social {
     justify-content: center;
     display: flex;
     column-gap: 1.25rem;
@@ -287,7 +326,7 @@ img {
 
 .home__social-link:hover {
     color: var(--title-color);
-}
+} */
 
 .home__info {
     display: grid;
@@ -814,6 +853,15 @@ img {
     .contact__container {
         justify-content: center;
     }
+
+    .home__data {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* .home__dynamic__title {
+        display: grid;
+        align-items: center;
+    } */
 }
 
 /* Large Devices */
@@ -872,6 +920,10 @@ img {
     .show-scroll {
         bottom: 5rem;
     }
+
+    /* .home__data {
+        grid-template-columns: repeat(2, 1fr);
+    } */
 }
 
 @media screen and (min-width: 1048px) {

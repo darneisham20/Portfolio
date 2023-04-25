@@ -139,3 +139,28 @@ const sendEmail = (e) => {
     }
 }
 contactForm.addEventListener('submit', sendEmail)
+
+/* ==== DYNAMIC TEXT HEADER ==== */
+const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = "book lover.";
+    }, 0);
+
+    setTimeout(() => {
+        text.textContent = "gamer.";
+    }, 4000);
+    setTimeout(() => {
+        text.textContent = "cat mom.";
+    }, 8000);
+    setTimeout(() => {
+        text.textContent = "yoga novice.";
+    }, 12000);
+    setTimeout(() => {
+        text.textContent = "anime enthusiast.";
+    }, 16000);
+}
+
+textLoad();
+setInterval(textLoad, 20000);
