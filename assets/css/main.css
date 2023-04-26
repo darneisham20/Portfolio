@@ -137,6 +137,13 @@ img {
     overflow: hidden; /* For animation */
 }
 
+.bold__text a:link {
+    color: var(--text-dynamic);
+}
+.bold__text a:visited{
+    color: var(--text-dynamic);
+}
+
 /*==== HEADER & NAV ====*/
 .header {
     width: 100%;
