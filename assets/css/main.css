@@ -300,15 +300,6 @@ img {
     place-items: center;
 }
 
-/* .home__perfil {
-    width: 200px;
-    border-radius: 3.5rem;
-    padding-top: 25px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-} */
-
 .home__perfil img {
     border-radius: 3.5rem;
 }
@@ -637,7 +628,7 @@ img {
     border: none;
     background: none;
     font-size: var(--h2-font-size);
-    font-family: var(--title-font);
+    font-family: var(--text-color);
     font-weight: var(--font-semi-bold);
     cursor: pointer;
     outline: none;
