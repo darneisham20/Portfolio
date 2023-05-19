@@ -628,25 +628,26 @@ input {
     resize: none;
 }
 
-/* .contact__button {
+.contact__button {
     justify-self: center;
     width: 125px;
     border: none;
     background: none;
     font-size: var(--h2-font-size);
-    font-family: var(--title-color);
-    font-weight: var(--normal-font-size);
+    font-family: var(--title-font);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
     cursor: pointer;
     outline: none;
     margin-top: .75rem;
-} */
+}
 
-/* .contact__button:hover {
+.contact__button:hover {
     transition: all .2s ease-in;
     color: var(--first-color);
-} */
+}
 
-.contact__button {
+/* .contact__button {
     justify-self: center;
     height: 30px;
     width: 125px;
@@ -655,12 +656,13 @@ input {
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--container-color);
+    color: var(--title-color);
 }
 
 .contact__button:hover {
     transition: all .2s ease-in;
     color: var(--first-color);
-}
+} */
 
 .contact__message {
     font-size: var(--small-font-size);
