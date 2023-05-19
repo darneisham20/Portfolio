@@ -248,7 +248,6 @@ img {
 }
 
 .home__title {
-    text-align: center;
     font-size: var(--biggest-font-size);
     letter-spacing: .3px;
     margin-bottom: .5rem;
@@ -390,7 +389,7 @@ img {
 }
 
 .skills__blob img {
-    width: 40px;
+    width: 30px;
 }
 
 .skills__name {
