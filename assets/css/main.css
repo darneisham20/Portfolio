@@ -628,11 +628,11 @@ img {
     border: none;
     background: none;
     font-size: var(--h2-font-size);
-    font-family: var(--text-color);
-    font-weight: var(--font-semi-bold);
+    font-family: var(--title-color);
+    font-weight: var(--normal-font-size);
     cursor: pointer;
     outline: none;
-    margin-top: .75rem;
+    /* margin-top: .75rem; */
 }
 
 .contact__button:hover {
