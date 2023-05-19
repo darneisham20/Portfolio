@@ -653,7 +653,13 @@ input {
     top: 50%;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--container-color);
+}
 
+.contact__button:hover {
+    transition: all .2s ease-in;
+    color: var(--first-color);
 }
 
 .contact__message {
