@@ -1,11 +1,9 @@
 /* ==== Menu Show and Hidden ==== */
-
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
 
 /* ==== MENU SHOW ==== */
-
 if(navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
@@ -13,7 +11,6 @@ if(navToggle) {
 }
 
 /* ==== MENU HIDDEN ==== */
-
 if(navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
@@ -21,7 +18,6 @@ if(navClose) {
 }
 
 /* ==== REMOVE MOBILE MENU ==== */
-
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () => {
@@ -31,7 +27,6 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /* ==== PORTFOLIO SWIPER ==== */
-
 let swiperProjects = new Swiper(".projects__container", {
     cssMode: true,
     loop: true,
@@ -55,7 +50,6 @@ let swiperProjects = new Swiper(".projects__container", {
 });
 
 /* ==== TESTIMONIAL SWIPER ==== */
-
 let swiperTestimonial = new Swiper(".testimonial__container", {
     grabCursor: true,
     loop: true,
@@ -67,7 +61,6 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 });
 
 /* ==== SCROLLING ACTIVE LINK ==== */
-
 const sections = document.querySelectorAll('section[id]')
 
 const scrollActive = () => {
@@ -90,7 +83,6 @@ const scrollActive = () => {
 window.addEventListener('scroll', scrollActive)
 
 /* ==== SHOW SCROLL UP BUTTON ==== */
-
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up')
     // When higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup

@@ -130,7 +130,7 @@ img {
 }
 
 .main {
-    overflow: hidden; /* For animation */
+    overflow: hidden;
 }
 
 .bold__text a:link {
@@ -436,8 +436,6 @@ img {
     justify-content: center;
 }
 
-
-/* PROJECT IDEA 1 */
 .projects__img {
     width: 250px;
     border-radius: .75rem;
@@ -940,7 +938,6 @@ img {
     }
 
     .home__info {
-        /* grid-template-rows: repeat(2, 80px); */
         row-gap: 4rem;
     }
 
