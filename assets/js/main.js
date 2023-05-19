@@ -119,7 +119,7 @@ const sendEmail = (e) => {
 
                 setTimeout(() => {
                     contactMessage.textContent = ''
-                }, 10000)
+                }, 8000)
             }, (error) => {
                 alert('Oops! Something has failed on our end...please try again later!', error)
             })

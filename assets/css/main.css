@@ -91,6 +91,12 @@ img {
     height: auto;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 /*==== REUSABLE CSS CLASSES ====*/
 .container {
     max-width: 1024px;
