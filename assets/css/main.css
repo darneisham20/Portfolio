@@ -5,16 +5,17 @@
     --header-height: 3.5rem;
 
     /*==== Colors ====*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    /* --first-color: hsl(6, 31%, 64%); */
-    --first-color: hsl(357, 40%, 66%);
-    --title-color: hsl(200, 4%, 16%);
-    --text-color: hsl(207, 4%, 28%);
-    --text-color-light: hsl(207, 4%, 56%);
-    --text-color-white: hsl(0, 0%, 100%);
-    --body-color: hsl(50, 27%, 96%);
-    --body-color-trs: hsla(50, 30%, 96%, 0.897);
-    --container-color: hsl(49, 27%, 92%);
+    --first-color: #E75F58;
+    --second-color: #F6CDCD;
+    --third-color: #c9ccce;
+    --title-color: #27292a;
+    --text-color: #47474A;
+    --text-color-light: #828287;
+    --body-color: #FFFFFF;
+    --container-color: #F5F8FA;
+    /* --body-color-trs: #FFFFFF; */
+    --body-color-trs: hsla(0, 0%, 100%, 0.897);
+
 
     /*==== Font and typography ====*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -69,7 +70,6 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
-    transition: background .4s; /* for dark mode animation */
 }
 
 h1, h2, h3 {
@@ -107,7 +107,7 @@ img {
 }
 
 .section__border {
-    border-bottom: 1px solid var(--title-color);
+    border-bottom: 1px solid var(--third-color);
     padding-bottom: 3.5rem;
 }
 
@@ -233,7 +233,7 @@ img {
 
 /* Active Link */
 .active-link {
-    color: var(--title-color);
+    color: var(--first-color);
 }
 
 /*==== HOME ====*/
@@ -436,6 +436,8 @@ img {
     justify-content: center;
 }
 
+
+/* PROJECT IDEA 1 */
 .projects__img {
     width: 250px;
     border-radius: .75rem;
@@ -513,6 +515,7 @@ img {
 .projects__container .swiper-pagination-bullet-active {
     background-color: var(--title-color);
 }
+
 
 /*==== TESTIMONIALS ====*/
 .testimonial {
